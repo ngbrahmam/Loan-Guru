@@ -16,5 +16,9 @@ module.exports={
         loanType: Joi.string().required(),
         amount: Joi.number().required(),
         payment_mode: Joi.string().required()
+        }),
+        //To delete the required customer in loan 
+        loan_require_validator_to_delete:Joi.object().keys({
+            loanId:Joi.string().required()
         })
 }

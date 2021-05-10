@@ -1,0 +1,4 @@
+module.exports={
+   mongooseconnect:'mongodb://localhost:27017/loanGuru',
+   Parserconnect:{useNewUrlParser: true}
+}

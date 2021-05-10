@@ -23,5 +23,8 @@ module.exports={
         age: Joi.number().required(),
         gender: Joi.string().required()
 
+    }),
+    customer_require_validator_to_delete:Joi.object().keys({
+        _id:Joi.string().required()
     })
 }

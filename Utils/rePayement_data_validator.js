@@ -12,5 +12,9 @@ module.exports={
     rePayment_data_validator_to_update:Joi.object().keys({
         repaymentId:Joi.string().required(),
         re_payment_amount:Joi.string().required()
+    }),
+     //To delete the required customer in loan 
+     rePayment_data_validator_to_delete:Joi.object().keys({
+        loarepaymentIdnId:Joi.string().required()
     })
 }
